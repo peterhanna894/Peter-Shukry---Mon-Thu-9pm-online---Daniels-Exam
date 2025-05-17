@@ -1,0 +1,2376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: "Poppins", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+.section-padding {
+    padding: 100px 0;
+}
+
+p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span {
+    display: inline-block;
+}
+.navbar-nav li a{
+    position: relative;
+}
+.navbar-nav li a::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: 5px;
+    height: 1.5px;
+    width: 0%;
+
+    /* transform: translateX(-100%); */
+    opacity: 1;
+    background: rgb(0, 0, 0);
+    transition: 0.4s ease;
+}
+
+/* .navbar-nav li a:hover::after {
+    width: 60%;
+} */
+
+
+.nav-link.active::after {
+    width: 75%;
+}
+.nav-item{
+    font-size:13px ;
+    font-weight: 20px;
+    font-weight: 400;
+}
+.navbar-brand{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+        font-weight: 60px;
+        font-weight: 800;
+        padding-block: 10px;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/bg.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center calc(50% - 00px);
+
+    h5 {
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 55px;
+    }
+
+    h1 {
+        /* height: 50px; */
+        font-size: 44px;
+        font-weight: 200;
+        line-height: 44px;
+        padding-block: 7px;
+        border-right: white 2px solid;
+        vertical-align: middle;
+        width: fit-content;
+        margin: auto;
+
+        span::after {
+            text-align: left;
+            content: "";
+            font-weight: 400;
+            /* height: 50px; */
+            position: relative;
+            bottom: 5px;
+            width: 1px;
+            animation: animated-text 6s steps(80) infinite;
+            display: inline-block;
+            vertical-align: middle;
+            overflow: hidden;
+            /* border-right: white 2px solid; */
+            padding-bottom: 2px;
+            white-space: nowrap;
+            /* text-overflow: clip; */
+        }
+    }
+}
+
+@keyframes animated-text {
+
+    0%,
+    7.96% {
+        width: 1px;
+    }
+
+    15.92%,
+    23.88% {
+        width: 9ch;
+        content: "Developer";
+    }
+
+    31.84%,
+    39.80% {
+        width: 1px;
+    }
+
+    47.76%,
+    55.72% {
+        width: 8ch;
+        content: "Designer";
+    }
+
+    63.68%,
+    71.64% {
+        width: 1px;
+
+    }
+
+    79.60%,
+    87.56% {
+        width: 12ch;
+        content: "Larry Daniels";
+    }
+
+    95.52%,
+    100% {
+        width: 1px;
+    }
+}
+
+.nav-link.active {
+    color: black;
+}
+
+
+.social-icon span {
+    display: inline-block;
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* ********************ABOUT******************* */
+#about {
+    /* height: 300vh; */
+}
+
+.hero .content h3 {
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.hero .content .sub-title {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.hero .skills {
+    margin-top: 30px;
+}
+
+.hero .skills .skills-progress {
+    width: 100%;
+    /* padding: 5px 10px; */
+    height: 25px;
+    margin-block: 30px;
+    border-radius: 5px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+
+}
+
+.hero .skills h6 {
+    font-size: 13px;
+    color: #fff;
+    margin: 0;
+
+}
+
+.hero .skills .skills-progress .inner-skills-progress {
+
+    height: 100%;
+    width: 10%;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+
+    color: #fff;
+    font-size: 13px;
+}
+
+.hero .hero-img {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.hero .hero-img:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -28px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.buton {
+    margin-top: 50px;
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    position: relative;
+    top: 0px;
+    transition: all 0.5s;
+}
+
+.buton-black {
+    background: #1c1c1c;
+    color: #eee;
+
+    &:hover {
+        background-color: #fff;
+        color: #000000;
+    }
+}
+
+.buton-white {
+
+    color: #000000;
+
+    &:hover {
+        background-color: #000000;
+        color: #ffffff;
+    }
+}
+
+/* ************SERVICES********** */
+#services {
+    background-color: #f7f7f7;
+}
+
+#services .item {
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .item .icon {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.services .item:hover .icon {
+    background: #1c1c1c;
+    color: #eee;
+}
+
+.section-head {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.section-head h3 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+    text-align: center;
+}
+
+.section-head h3:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+/* ***********PORTFOLIO**************** */
+#portfolio .item-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.item-img-overlay {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    transition: top .8s ease, opacity 0.4s ease;
+    opacity: 0;
+
+}
+
+#portfolio .overlay-info {
+    background-color: #ffffffd5;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.8s ease;
+    opacity: 0;
+}
+
+.portfolio .item-img h6 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 15px;
+    transform: translateY(-55px);
+    transition: all 0.8s;
+}
+
+#portfolio .item-img:hover .item-img-overlay {
+    top: 0;
+    opacity: 1;
+}
+
+#portfolio .item-img:hover .overlay-info {
+    /* justify-content: center; */
+    gap: 0px;
+    opacity: 1;
+}
+
+#portfolio .item-img:hover .overlay-info h6 {
+    /* color: red; */
+    transform: translateY(0px);
+}
+
+#portfolio {
+
+    .web,
+    .brand,
+    .graphic {
+        display: none;
+    }
+}
+
+#all:checked~.gallery .web {
+
+    display: block;
+}
+
+#all:checked~.gallery .brand {
+
+    display: block;
+}
+
+#all:checked~.gallery .graphic {
+
+    display: block;
+}
+
+#brand:checked~.gallery .brand {
+
+    display: block;
+}
+
+#design:checked~.gallery .web {
+
+    display: block;
+}
+
+#graphic:checked~.gallery .graphic {
+
+    display: block;
+}
+
+
+#all:checked~.filtering label.all::before {
+
+    width: 100%;
+}
+
+#brand:checked~.filtering label.brand-check::before {
+
+    width: 100%;
+}
+
+#design:checked~.filtering label.design-check::before {
+
+    width: 100%;
+}
+
+#graphic:checked~.filtering label.graphic-check::before {
+
+    width: 100%;
+}
+
+.portfolio .filtering label {
+    margin: 0 15px;
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    position: relative;
+}
+
+.portfolio .filtering label:before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #111;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.4s;
+
+}
+.portfolio .item-img .icon i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+}
+.portfolio .item-img .icon i:hover {
+    background: transparent;
+    color: #000;
+}
+/* **********CAROUSEL */
+.carousel-section {
+    background-color: #f7f7f7;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #869791;
+    margin-inline: 10px;
+
+    &:hover {
+        background-color: #869791;
+    }
+}
+
+.carousel-indicators {
+
+    bottom: -55px
+}
+
+.carousel-indicators button:hover {
+    background-color: #869791;
+}
+
+.author-test img {
+    height: 90px;
+    margin: auto;
+}
+
+.testimonial-box h6 {
+
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+
+.testimonial-box span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* ***********COUNTERS************** */
+.counter-num {
+    font-size: 32px;
+    /* font-weight: bold; */
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+}
+.counter-text{
+    font-family: "Poppins", sans-serif;
+
+}
+.counter850::after {
+    color: #343434;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 33px;
+    content: "0";
+    animation: countUp850 2s steps(25) forwards;
+}
+
+@keyframes countUp850 {
+    0% {
+        content: "0";
+    }
+
+    0.59% {
+        content: "5";
+    }
+
+    1.18% {
+        content: "10";
+    }
+
+    1.76% {
+        content: "15";
+    }
+
+    2.35% {
+        content: "20";
+    }
+
+    2.94% {
+        content: "25";
+    }
+
+    3.53% {
+        content: "30";
+    }
+
+    4.12% {
+        content: "35";
+    }
+
+    4.71% {
+        content: "40";
+    }
+
+    5.29% {
+        content: "45";
+    }
+
+    5.88% {
+        content: "50";
+    }
+
+    6.47% {
+        content: "55";
+    }
+
+    7.06% {
+        content: "60";
+    }
+
+    7.65% {
+        content: "65";
+    }
+
+    8.24% {
+        content: "70";
+    }
+
+    8.82% {
+        content: "75";
+    }
+
+    9.41% {
+        content: "80";
+    }
+
+    10% {
+        content: "85";
+    }
+
+    10.59% {
+        content: "90";
+    }
+
+    11.18% {
+        content: "95";
+    }
+
+    11.76% {
+        content: "100";
+    }
+
+    12.35% {
+        content: "105";
+    }
+
+    12.94% {
+        content: "110";
+    }
+
+    13.53% {
+        content: "115";
+    }
+
+    14.12% {
+        content: "120";
+    }
+
+    14.71% {
+        content: "125";
+    }
+
+    15.29% {
+        content: "130";
+    }
+
+    15.88% {
+        content: "135";
+    }
+
+    16.47% {
+        content: "140";
+    }
+
+    17.06% {
+        content: "145";
+    }
+
+    17.65% {
+        content: "150";
+    }
+
+    18.24% {
+        content: "155";
+    }
+
+    18.82% {
+        content: "160";
+    }
+
+    19.41% {
+        content: "165";
+    }
+
+    20% {
+        content: "170";
+    }
+
+    20.59% {
+        content: "175";
+    }
+
+    21.18% {
+        content: "180";
+    }
+
+    21.76% {
+        content: "185";
+    }
+
+    22.35% {
+        content: "190";
+    }
+
+    22.94% {
+        content: "195";
+    }
+
+    23.53% {
+        content: "200";
+    }
+
+    24.12% {
+        content: "205";
+    }
+
+    24.71% {
+        content: "210";
+    }
+
+    25.29% {
+        content: "215";
+    }
+
+    25.88% {
+        content: "220";
+    }
+
+    26.47% {
+        content: "225";
+    }
+
+    27.06% {
+        content: "230";
+    }
+
+    27.65% {
+        content: "235";
+    }
+
+    28.24% {
+        content: "240";
+    }
+
+    28.82% {
+        content: "245";
+    }
+
+    29.41% {
+        content: "250";
+    }
+
+    30% {
+        content: "255";
+    }
+
+    30.59% {
+        content: "260";
+    }
+
+    31.18% {
+        content: "265";
+    }
+
+    31.76% {
+        content: "270";
+    }
+
+    32.35% {
+        content: "275";
+    }
+
+    32.94% {
+        content: "280";
+    }
+
+    33.53% {
+        content: "285";
+    }
+
+    34.12% {
+        content: "290";
+    }
+
+    34.71% {
+        content: "295";
+    }
+
+    35.29% {
+        content: "300";
+    }
+
+    35.88% {
+        content: "305";
+    }
+
+    36.47% {
+        content: "310";
+    }
+
+    37.06% {
+        content: "315";
+    }
+
+    37.65% {
+        content: "320";
+    }
+
+    38.24% {
+        content: "325";
+    }
+
+    38.82% {
+        content: "330";
+    }
+
+    39.41% {
+        content: "335";
+    }
+
+    40% {
+        content: "340";
+    }
+
+    40.59% {
+        content: "345";
+    }
+
+    41.18% {
+        content: "350";
+    }
+
+    41.76% {
+        content: "355";
+    }
+
+    42.35% {
+        content: "360";
+    }
+
+    42.94% {
+        content: "365";
+    }
+
+    43.53% {
+        content: "370";
+    }
+
+    44.12% {
+        content: "375";
+    }
+
+    44.71% {
+        content: "380";
+    }
+
+    45.29% {
+        content: "385";
+    }
+
+    45.88% {
+        content: "390";
+    }
+
+    46.47% {
+        content: "395";
+    }
+
+    47.06% {
+        content: "400";
+    }
+
+    47.65% {
+        content: "405";
+    }
+
+    48.24% {
+        content: "410";
+    }
+
+    48.82% {
+        content: "415";
+    }
+
+    49.41% {
+        content: "420";
+    }
+
+    50% {
+        content: "425";
+    }
+
+    50.59% {
+        content: "430";
+    }
+
+    51.18% {
+        content: "435";
+    }
+
+    51.76% {
+        content: "440";
+    }
+
+    52.35% {
+        content: "445";
+    }
+
+    52.94% {
+        content: "450";
+    }
+
+    53.53% {
+        content: "455";
+    }
+
+    54.12% {
+        content: "460";
+    }
+
+    54.71% {
+        content: "465";
+    }
+
+    55.29% {
+        content: "470";
+    }
+
+    55.88% {
+        content: "475";
+    }
+
+    56.47% {
+        content: "480";
+    }
+
+    57.06% {
+        content: "485";
+    }
+
+    57.65% {
+        content: "490";
+    }
+
+    58.24% {
+        content: "495";
+    }
+
+    58.82% {
+        content: "500";
+    }
+
+    59.41% {
+        content: "505";
+    }
+
+    60% {
+        content: "510";
+    }
+
+    60.59% {
+        content: "515";
+    }
+
+    61.18% {
+        content: "520";
+    }
+
+    61.76% {
+        content: "525";
+    }
+
+    62.35% {
+        content: "530";
+    }
+
+    62.94% {
+        content: "535";
+    }
+
+    63.53% {
+        content: "540";
+    }
+
+    64.12% {
+        content: "545";
+    }
+
+    64.71% {
+        content: "550";
+    }
+
+    65.29% {
+        content: "555";
+    }
+
+    65.88% {
+        content: "560";
+    }
+
+    66.47% {
+        content: "565";
+    }
+
+    67.06% {
+        content: "570";
+    }
+
+    67.65% {
+        content: "575";
+    }
+
+    68.24% {
+        content: "580";
+    }
+
+    68.82% {
+        content: "585";
+    }
+
+    69.41% {
+        content: "590";
+    }
+
+    70% {
+        content: "595";
+    }
+
+    70.59% {
+        content: "600";
+    }
+
+    71.18% {
+        content: "605";
+    }
+
+    71.76% {
+        content: "610";
+    }
+
+    72.35% {
+        content: "615";
+    }
+
+    72.94% {
+        content: "620";
+    }
+
+    73.53% {
+        content: "625";
+    }
+
+    74.12% {
+        content: "630";
+    }
+
+    74.71% {
+        content: "635";
+    }
+
+    75.29% {
+        content: "640";
+    }
+
+    75.88% {
+        content: "645";
+    }
+
+    76.47% {
+        content: "650";
+    }
+
+    77.06% {
+        content: "655";
+    }
+
+    77.65% {
+        content: "660";
+    }
+
+    78.24% {
+        content: "665";
+    }
+
+    78.82% {
+        content: "670";
+    }
+
+    79.41% {
+        content: "675";
+    }
+
+    80% {
+        content: "680";
+    }
+
+    80.59% {
+        content: "685";
+    }
+
+    81.18% {
+        content: "690";
+    }
+
+    81.76% {
+        content: "695";
+    }
+
+    82.35% {
+        content: "700";
+    }
+
+    82.94% {
+        content: "705";
+    }
+
+    83.53% {
+        content: "710";
+    }
+
+    84.12% {
+        content: "715";
+    }
+
+    84.71% {
+        content: "720";
+    }
+
+    85.29% {
+        content: "725";
+    }
+
+    85.88% {
+        content: "730";
+    }
+
+    86.47% {
+        content: "735";
+    }
+
+    87.06% {
+        content: "740";
+    }
+
+    87.65% {
+        content: "745";
+    }
+
+    88.24% {
+        content: "750";
+    }
+
+    88.82% {
+        content: "755";
+    }
+
+    89.41% {
+        content: "760";
+    }
+
+    90% {
+        content: "765";
+    }
+
+    90.59% {
+        content: "770";
+    }
+
+    91.18% {
+        content: "775";
+    }
+
+    91.76% {
+        content: "780";
+    }
+
+    92.35% {
+        content: "785";
+    }
+
+    92.94% {
+        content: "790";
+    }
+
+    93.53% {
+        content: "795";
+    }
+
+    94.12% {
+        content: "800";
+    }
+
+    94.71% {
+        content: "805";
+    }
+
+    95.29% {
+        content: "810";
+    }
+
+    95.88% {
+        content: "815";
+    }
+
+    96.47% {
+        content: "820";
+    }
+
+    97.06% {
+        content: "825";
+    }
+
+    97.65% {
+        content: "830";
+    }
+
+    98.24% {
+        content: "835";
+    }
+
+    98.82% {
+        content: "840";
+    }
+
+    99.41% {
+        content: "845";
+    }
+
+    100% {
+        content: "850";
+    }
+}
+
+.counter230::after {
+    color: #343434;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 33px;
+    content: "0";
+    animation: countUp230 2s steps(90) forwards;
+}
+
+@keyframes countUp230 {
+    0% {
+        content: "0";
+    }
+
+    2.17% {
+        content: "5";
+    }
+
+    4.35% {
+        content: "10";
+    }
+
+    6.52% {
+        content: "15";
+    }
+
+    8.7% {
+        content: "20";
+    }
+
+    10.87% {
+        content: "25";
+    }
+
+    13.04% {
+        content: "30";
+    }
+
+    15.22% {
+        content: "35";
+    }
+
+    17.39% {
+        content: "40";
+    }
+
+    19.57% {
+        content: "45";
+    }
+
+    21.74% {
+        content: "50";
+    }
+
+    23.91% {
+        content: "55";
+    }
+
+    26.09% {
+        content: "60";
+    }
+
+    28.26% {
+        content: "65";
+    }
+
+    30.43% {
+        content: "70";
+    }
+
+    32.61% {
+        content: "75";
+    }
+
+    34.78% {
+        content: "80";
+    }
+
+    36.96% {
+        content: "85";
+    }
+
+    39.13% {
+        content: "90";
+    }
+
+    41.3% {
+        content: "95";
+    }
+
+    43.48% {
+        content: "100";
+    }
+
+    45.65% {
+        content: "105";
+    }
+
+    47.83% {
+        content: "110";
+    }
+
+    50% {
+        content: "115";
+    }
+
+    52.17% {
+        content: "120";
+    }
+
+    54.35% {
+        content: "125";
+    }
+
+    56.52% {
+        content: "130";
+    }
+
+    58.7% {
+        content: "135";
+    }
+
+    60.87% {
+        content: "140";
+    }
+
+    63.04% {
+        content: "145";
+    }
+
+    65.22% {
+        content: "150";
+    }
+
+    67.39% {
+        content: "155";
+    }
+
+    69.57% {
+        content: "160";
+    }
+
+    71.74% {
+        content: "165";
+    }
+
+    73.91% {
+        content: "170";
+    }
+
+    76.09% {
+        content: "175";
+    }
+
+    78.26% {
+        content: "180";
+    }
+
+    80.43% {
+        content: "185";
+    }
+
+    82.61% {
+        content: "190";
+    }
+
+    84.78% {
+        content: "195";
+    }
+
+    86.96% {
+        content: "200";
+    }
+
+    89.13% {
+        content: "205";
+    }
+
+    91.3% {
+        content: "210";
+    }
+
+    93.48% {
+        content: "215";
+    }
+
+    95.65% {
+        content: "220";
+    }
+
+    97.83% {
+        content: "225";
+    }
+
+    100% {
+        content: "230";
+    }
+}
+
+.counter9450::after {
+    color: #343434;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 33px;
+    content: "0";
+    animation: countUp9450 2s steps(92) forwards;
+}
+
+@keyframes countUp9450 {
+    0% {
+        content: "0";
+    }
+
+    1.02% {
+        content: "96";
+    }
+
+    2.04% {
+        content: "192";
+    }
+
+    3.06% {
+        content: "288";
+    }
+
+    4.08% {
+        content: "384";
+    }
+
+    5.1% {
+        content: "480";
+    }
+
+    6.12% {
+        content: "576";
+    }
+
+    7.14% {
+        content: "672";
+    }
+
+    8.16% {
+        content: "768";
+    }
+
+    9.18% {
+        content: "864";
+    }
+
+    10.2% {
+        content: "960";
+    }
+
+    11.22% {
+        content: "1056";
+    }
+
+    12.24% {
+        content: "1152";
+    }
+
+    13.27% {
+        content: "1248";
+    }
+
+    14.29% {
+        content: "1344";
+    }
+
+    15.31% {
+        content: "1440";
+    }
+
+    16.33% {
+        content: "1536";
+    }
+
+    17.35% {
+        content: "1632";
+    }
+
+    18.37% {
+        content: "1728";
+    }
+
+    19.39% {
+        content: "1824";
+    }
+
+    20.41% {
+        content: "1920";
+    }
+
+    21.43% {
+        content: "2016";
+    }
+
+    22.45% {
+        content: "2112";
+    }
+
+    23.47% {
+        content: "2208";
+    }
+
+    24.49% {
+        content: "2304";
+    }
+
+    25.51% {
+        content: "2400";
+    }
+
+    26.53% {
+        content: "2496";
+    }
+
+    27.55% {
+        content: "2592";
+    }
+
+    28.57% {
+        content: "2688";
+    }
+
+    29.59% {
+        content: "2784";
+    }
+
+    30.61% {
+        content: "2880";
+    }
+
+    31.63% {
+        content: "2976";
+    }
+
+    32.65% {
+        content: "3072";
+    }
+
+    33.67% {
+        content: "3168";
+    }
+
+    34.69% {
+        content: "3264";
+    }
+
+    35.71% {
+        content: "3360";
+    }
+
+    36.73% {
+        content: "3456";
+    }
+
+    37.76% {
+        content: "3552";
+    }
+
+    38.78% {
+        content: "3648";
+    }
+
+    39.8% {
+        content: "3744";
+    }
+
+    40.82% {
+        content: "3840";
+    }
+
+    41.84% {
+        content: "3936";
+    }
+
+    42.86% {
+        content: "4032";
+    }
+
+    43.88% {
+        content: "4128";
+    }
+
+    44.9% {
+        content: "4224";
+    }
+
+    45.92% {
+        content: "4320";
+    }
+
+    46.94% {
+        content: "4416";
+    }
+
+    47.96% {
+        content: "4512";
+    }
+
+    48.98% {
+        content: "4608";
+    }
+
+    50% {
+        content: "4704";
+    }
+
+    51.02% {
+        content: "4800";
+    }
+
+    52.04% {
+        content: "4896";
+    }
+
+    53.06% {
+        content: "4992";
+    }
+
+    54.08% {
+        content: "5088";
+    }
+
+    55.1% {
+        content: "5184";
+    }
+
+    56.12% {
+        content: "5280";
+    }
+
+    57.14% {
+        content: "5376";
+    }
+
+    58.16% {
+        content: "5472";
+    }
+
+    59.18% {
+        content: "5568";
+    }
+
+    60.2% {
+        content: "5664";
+    }
+
+    61.22% {
+        content: "5760";
+    }
+
+    62.24% {
+        content: "5856";
+    }
+
+    63.27% {
+        content: "5952";
+    }
+
+    64.29% {
+        content: "6048";
+    }
+
+    65.31% {
+        content: "6144";
+    }
+
+    66.33% {
+        content: "6240";
+    }
+
+    67.35% {
+        content: "6336";
+    }
+
+    68.37% {
+        content: "6432";
+    }
+
+    69.39% {
+        content: "6528";
+    }
+
+    70.41% {
+        content: "6624";
+    }
+
+    71.43% {
+        content: "6720";
+    }
+
+    72.45% {
+        content: "6816";
+    }
+
+    73.47% {
+        content: "6912";
+    }
+
+    74.49% {
+        content: "7008";
+    }
+
+    75.51% {
+        content: "7104";
+    }
+
+    76.53% {
+        content: "7200";
+    }
+
+    77.55% {
+        content: "7296";
+    }
+
+    78.57% {
+        content: "7392";
+    }
+
+    79.59% {
+        content: "7488";
+    }
+
+    80.61% {
+        content: "7584";
+    }
+
+    81.63% {
+        content: "7680";
+    }
+
+    82.65% {
+        content: "7776";
+    }
+
+    83.67% {
+        content: "7872";
+    }
+
+    84.69% {
+        content: "7968";
+    }
+
+    85.71% {
+        content: "8064";
+    }
+
+    86.73% {
+        content: "8160";
+    }
+
+    87.76% {
+        content: "8256";
+    }
+
+    88.78% {
+        content: "8352";
+    }
+
+    89.8% {
+        content: "8448";
+    }
+
+    90.82% {
+        content: "8544";
+    }
+
+    91.84% {
+        content: "8640";
+    }
+
+    92.86% {
+        content: "8736";
+    }
+
+    93.88% {
+        content: "8832";
+    }
+
+    94.9% {
+        content: "8928";
+    }
+
+    95.92% {
+        content: "9024";
+    }
+
+    96.94% {
+        content: "9120";
+    }
+
+    97.96% {
+        content: "9216";
+    }
+
+    98.98% {
+        content: "9312";
+    }
+
+    100% {
+        content: "9450";
+    }
+}
+
+
+.counter780::after {
+    color: #343434;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 33px;
+    content: "0";
+    animation: countUp780 2s steps(48) forwards;
+}
+
+@keyframes countUp780 {
+    0% {
+        content: "0";
+    }
+
+    1.03% {
+        content: "8";
+    }
+
+    2.06% {
+        content: "16";
+    }
+
+    3.09% {
+        content: "24";
+    }
+
+    4.12% {
+        content: "32";
+    }
+
+    5.15% {
+        content: "40";
+    }
+
+    6.19% {
+        content: "48";
+    }
+
+    7.22% {
+        content: "56";
+    }
+
+    8.25% {
+        content: "64";
+    }
+
+    9.28% {
+        content: "72";
+    }
+
+    10.31% {
+        content: "80";
+    }
+
+    11.34% {
+        content: "88";
+    }
+
+    12.37% {
+        content: "96";
+    }
+
+    13.4% {
+        content: "104";
+    }
+
+    14.43% {
+        content: "112";
+    }
+
+    15.46% {
+        content: "120";
+    }
+
+    16.49% {
+        content: "128";
+    }
+
+    17.53% {
+        content: "136";
+    }
+
+    18.56% {
+        content: "144";
+    }
+
+    19.59% {
+        content: "152";
+    }
+
+    20.62% {
+        content: "160";
+    }
+
+    21.65% {
+        content: "168";
+    }
+
+    22.68% {
+        content: "176";
+    }
+
+    23.71% {
+        content: "184";
+    }
+
+    24.74% {
+        content: "192";
+    }
+
+    25.77% {
+        content: "200";
+    }
+
+    26.8% {
+        content: "208";
+    }
+
+    27.83% {
+        content: "216";
+    }
+
+    28.87% {
+        content: "224";
+    }
+
+    29.9% {
+        content: "232";
+    }
+
+    30.93% {
+        content: "240";
+    }
+
+    31.96% {
+        content: "248";
+    }
+
+    32.99% {
+        content: "256";
+    }
+
+    34.02% {
+        content: "264";
+    }
+
+    35.05% {
+        content: "272";
+    }
+
+    36.08% {
+        content: "280";
+    }
+
+    37.11% {
+        content: "288";
+    }
+
+    38.14% {
+        content: "296";
+    }
+
+    39.18% {
+        content: "304";
+    }
+
+    40.21% {
+        content: "312";
+    }
+
+    41.24% {
+        content: "320";
+    }
+
+    42.27% {
+        content: "328";
+    }
+
+    43.3% {
+        content: "336";
+    }
+
+    44.33% {
+        content: "344";
+    }
+
+    45.36% {
+        content: "352";
+    }
+
+    46.39% {
+        content: "360";
+    }
+
+    47.42% {
+        content: "368";
+    }
+
+    48.45% {
+        content: "376";
+    }
+
+    49.48% {
+        content: "384";
+    }
+
+    50.52% {
+        content: "392";
+    }
+
+    51.55% {
+        content: "400";
+    }
+
+    52.58% {
+        content: "408";
+    }
+
+    53.61% {
+        content: "416";
+    }
+
+    54.64% {
+        content: "424";
+    }
+
+    55.67% {
+        content: "432";
+    }
+
+    56.7% {
+        content: "440";
+    }
+
+    57.73% {
+        content: "448";
+    }
+
+    58.76% {
+        content: "456";
+    }
+
+    59.79% {
+        content: "464";
+    }
+
+    60.82% {
+        content: "472";
+    }
+
+    61.86% {
+        content: "480";
+    }
+
+    62.89% {
+        content: "488";
+    }
+
+    63.92% {
+        content: "496";
+    }
+
+    64.95% {
+        content: "504";
+    }
+
+    65.98% {
+        content: "512";
+    }
+
+    67.01% {
+        content: "520";
+    }
+
+    68.04% {
+        content: "528";
+    }
+
+    69.07% {
+        content: "536";
+    }
+
+    70.1% {
+        content: "544";
+    }
+
+    71.13% {
+        content: "552";
+    }
+
+    72.16% {
+        content: "560";
+    }
+
+    73.2% {
+        content: "568";
+    }
+
+    74.23% {
+        content: "576";
+    }
+
+    75.26% {
+        content: "584";
+    }
+
+    76.29% {
+        content: "592";
+    }
+
+    77.32% {
+        content: "600";
+    }
+
+    78.35% {
+        content: "608";
+    }
+
+    79.38% {
+        content: "616";
+    }
+
+    80.41% {
+        content: "624";
+    }
+
+    81.44% {
+        content: "632";
+    }
+
+    82.47% {
+        content: "640";
+    }
+
+    83.5% {
+        content: "648";
+    }
+
+    84.54% {
+        content: "656";
+    }
+
+    85.57% {
+        content: "664";
+    }
+
+    86.6% {
+        content: "672";
+    }
+
+    87.63% {
+        content: "680";
+    }
+
+    88.66% {
+        content: "688";
+    }
+
+    89.69% {
+        content: "696";
+    }
+
+    90.72% {
+        content: "704";
+    }
+
+    91.75% {
+        content: "712";
+    }
+
+    92.78% {
+        content: "720";
+    }
+
+    93.81% {
+        content: "728";
+    }
+
+    94.84% {
+        content: "736";
+    }
+
+    95.88% {
+        content: "744";
+    }
+
+    96.91% {
+        content: "752";
+    }
+
+    97.94% {
+        content: "760";
+    }
+
+    98.97% {
+        content: "768";
+    }
+
+    100% {
+        content: "780";
+    }
+}
+
+.counter-text {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #748182;
+}
+
+.counter-ico {
+    font-size: 30px;
+    line-height: 33px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.counters-section {
+    color: #343434;
+}
+/* ***********Our team**************** */
+#blog{
+    background-color: #f7f7f7;
+}
+.single-team{
+    background-color:#5b5b5b ;
+    border-radius:0px 0px 5px 5px;
+    /* position: relative; */
+    
+
+}
+.img-area{
+    position: relative;
+    overflow: hidden;
+    img{
+
+        transition: 0.5s ease;
+    }
+}
+.single-team .social{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    /* background-color: #ffffffb1; */
+    padding: 5px;
+    
+}
+.single-team .social-inner{
+    background-color: #ffffffdf;
+    height: 50%;
+    width: 50%;
+    transition: 0.5s all;
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.single-team:hover .social-inner{
+    width: 100%;
+    height: 100%;
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+.img-area:hover img {
+    transform: scale(1.2);
+}
+.img-area .social ul li a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.social-inner li a{
+    /* border: 1px solid #000; */
+        color: #fff;
+        background-color: #000;
+        display: block;
+        font-size: 20px;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+}
+.img-text{
+    h4{
+
+        font-size: 25px;
+        line-height: 28px;
+        font-weight: 500;
+    }
+    h5{
+        font-size: 20px;
+            line-height: 22px;
+            font-weight: 700;
+    }
+
+}
+/* *******CONTACT********** */
+.contact .info .item .icon {
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.contact .info .item:hover .icon {
+    background: #1c1c1c;
+    color: #eee;
+}
+.contact .form{
+    width: 80%;
+}
+
+.contact .form .form-text {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+    margin-block: 10px;
+}
+
+.contact .form .buton-form{
+    margin: 0;
+}
+footer {
+    background: #1c1c1c;
+    padding: 30px;
+}
